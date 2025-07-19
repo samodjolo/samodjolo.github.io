@@ -46,11 +46,15 @@ export default function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`transition-colors duration-300 hover:text-blue-600 ${
+                className={`relative py-2 transition-colors duration-300 hover:text-blue-600 group ${
                   activeSection === item.id ? 'text-blue-600 font-semibold' : ''
                 }`}
               >
                 {item.label}
+                {/* Underline effect */}
+                <span className={`absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-green-600 transition-all duration-300 group-hover:w-full ${
+                  activeSection === item.id ? 'w-full' : ''
+                }`}></span>
               </button>
             ))}
           </div>
@@ -95,11 +99,15 @@ export default function Header() {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-left py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 ${
+                  className={`relative text-left py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-gray-100 dark:hover:bg-gray-800 group ${
                     activeSection === item.id ? 'text-blue-600 font-semibold' : ''
                   }`}
                 >
                   {item.label}
+                  {/* Mobile underline effect */}
+                  <span className={`absolute bottom-1 left-4 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-green-600 transition-all duration-300 group-hover:w-6 ${
+                    activeSection === item.id ? 'w-6' : ''
+                  }`}></span>
                 </button>
               ))}
             </div>
