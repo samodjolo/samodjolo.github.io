@@ -6,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build && next export",
+    "deploy": "gh-pages -d out",
+    "predeploy": "npm run export"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
