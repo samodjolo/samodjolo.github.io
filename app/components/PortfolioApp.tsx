@@ -42,7 +42,7 @@ export default function PortfolioApp() {
       darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
     }`}>
       {/* Main Content */}
-      <div className="relative z-10">
+      <div className="relative z-20">
         <Header />
         <main>
           <Hero />

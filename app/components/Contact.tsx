@@ -42,7 +42,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
+    <section id="contact" className={`py-20 relative z-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
@@ -128,7 +128,7 @@ export default function Contact() {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`p-3 rounded-lg transition-all duration-300 hover:scale-110 ${
+                      className={`p-3 rounded-lg transition-all duration-300 hover:scale-110 cursor-pointer ${
                         darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-gray-100'
                       } shadow-lg hover:shadow-xl`}
                       title={social.name}
@@ -141,9 +141,9 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className={`p-8 rounded-xl shadow-lg ${
+            <div className={`p-8 rounded-xl shadow-lg relative z-30 ${
               darkMode ? 'bg-gray-700' : 'bg-white'
-            }`}>
+            }`} style={{ pointerEvents: 'auto' }}>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
@@ -156,12 +156,13 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className={`w-full px-4 py-3 rounded-lg border transition-colors ${
+                      className={`w-full px-4 py-3 rounded-lg border transition-colors cursor-text ${
                         darkMode 
                           ? 'bg-gray-600 border-gray-500 text-white focus:border-blue-500' 
                           : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'
                       } focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
                       placeholder="Your name"
+                      style={{ pointerEvents: 'auto', cursor: 'text' }}
                     />
                   </div>
                   <div>
@@ -174,12 +175,13 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className={`w-full px-4 py-3 rounded-lg border transition-colors ${
+                      className={`w-full px-4 py-3 rounded-lg border transition-colors cursor-text ${
                         darkMode 
                           ? 'bg-gray-600 border-gray-500 text-white focus:border-blue-500' 
                           : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'
                       } focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
                       placeholder="your.email@example.com"
+                      style={{ pointerEvents: 'auto', cursor: 'text' }}
                     />
                   </div>
                 </div>
@@ -194,12 +196,13 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className={`w-full px-4 py-3 rounded-lg border transition-colors ${
+                    className={`w-full px-4 py-3 rounded-lg border transition-colors cursor-text ${
                       darkMode 
                         ? 'bg-gray-600 border-gray-500 text-white focus:border-blue-500' 
                         : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
                     placeholder="Project discussion"
+                    style={{ pointerEvents: 'auto', cursor: 'text' }}
                   />
                 </div>
 
@@ -213,23 +216,25 @@ export default function Contact() {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className={`w-full px-4 py-3 rounded-lg border transition-colors resize-none ${
+                    className={`w-full px-4 py-3 rounded-lg border transition-colors resize-none cursor-text ${
                       darkMode 
                         ? 'bg-gray-600 border-gray-500 text-white focus:border-blue-500' 
                         : 'bg-white border-gray-300 text-gray-900 focus:border-blue-500'
                     } focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
                     placeholder="Tell me about your project or just say hello!"
+                    style={{ pointerEvents: 'auto', cursor: 'text' }}
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
+                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 cursor-pointer ${
                     isSubmitting
                       ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 transform hover:scale-105'
+                      : 'bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 transform hover:scale-105 cursor-pointer'
                   } text-white shadow-lg hover:shadow-xl`}
+                  style={{ pointerEvents: 'auto' }}
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
