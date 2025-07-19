@@ -1,3 +1,4 @@
+// components/Hero.tsx
 'use client';
 import { useAppSelector } from '../lib/hooks/redux';
 import { useEffect, useState } from 'react';
@@ -56,7 +57,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-            Djolo
+            Your Name
           </h1>
           
           <div className="text-2xl md:text-3xl mb-8 h-16 flex items-center justify-center">
@@ -114,7 +115,6 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-      </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className={`w-6 h-10 border-2 rounded-full flex justify-center ${
             darkMode ? 'border-gray-400' : 'border-gray-600'
@@ -124,6 +124,7 @@ export default function Hero() {
             }`}></div>
           </div>
         </div>
+      </div>
     </section>
   );
 }
