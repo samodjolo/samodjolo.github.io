@@ -42,7 +42,7 @@ export default function About() {
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                  Your Name
+                  Djolo
                 </span>
                 {' '}👋
               </h3>
@@ -50,36 +50,36 @@ export default function About() {
               <p className={`text-lg leading-relaxed ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                With over 4 years of experience in full-stack development, I specialize in creating 
-                modern, scalable web applications using cutting-edge technologies like React, Next.js, 
-                TypeScript, and Node.js.
+                With over 4 years of experience in software development, I specialize in backend 
+                development and creating robust, scalable server-side applications. My expertise 
+                lies in Java Spring Boot, Node.js, and database design with PostgreSQL and MongoDB.
               </p>
 
               <p className={`text-lg leading-relaxed ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                I believe in writing clean, maintainable code and creating user experiences that are 
-                both beautiful and functional. My passion lies in solving complex problems and 
-                turning ideas into reality through code.
+                I'm passionate about building efficient APIs, microservices architectures, and 
+                ensuring optimal performance and security. While I'm backend-focused, I also 
+                enjoy working with modern frontend technologies to deliver complete solutions.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className={`p-4 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg hover:shadow-xl transition-shadow`}>
-                  <h4 className="font-semibold text-blue-600 mb-2">Frontend</h4>
+                  <h4 className="font-semibold text-blue-600 mb-2">Backend (Primary)</h4>
                   <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    React, Next.js, TypeScript, Tailwind CSS
+                    Java Spring Boot, Node.js, PostgreSQL, MongoDB
                   </p>
                 </div>
                 <div className={`p-4 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg hover:shadow-xl transition-shadow`}>
-                  <h4 className="font-semibold text-green-600 mb-2">Backend</h4>
+                  <h4 className="font-semibold text-green-600 mb-2">Frontend</h4>
                   <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    Java Spring, Node.js, Python, PostgreSQL, MongoDB
+                    React, Next.js, TypeScript, Tailwind CSS
                   </p>
                 </div>
               </div>
 
               <div className="flex flex-wrap gap-2 mt-6">
-                {['React', 'Next.js', 'TypeScript', 'Java Spring', 'Python', 'PostgreSQL'].map(tech => (
+                {['Java Spring', 'Node.js', 'PostgreSQL', 'MongoDB', 'REST APIs', 'Microservices'].map(tech => (
                   <span
                     key={tech}
                     className={`px-3 py-1 rounded-full text-sm font-medium ${

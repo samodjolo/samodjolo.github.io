@@ -86,18 +86,27 @@ const initialState: PortfolioState = {
     }
   ],
   skills: [
-    { name: "JavaScript", level: 95 },
-    { name: "TypeScript", level: 90 },
-    { name: "React", level: 92 },
-    { name: "Next.js", level: 88 },
-    { name: "Java", level: 85 },
-    { name: "Spring Boot", level: 82 },
-    { name: "Node.js", level: 80 },
-    { name: "Python", level: 78 },
-    { name: "PostgreSQL", level: 82 },
-    { name: "MongoDB", level: 80 },
-    { name: "Tailwind CSS", level: 90 },
-    { name: "Redux", level: 85 }
+    // Backend Skills
+    { name: "Java", level: 90 },
+    { name: "Spring Boot", level: 88 },
+    { name: "Node.js", level: 85 },
+    { name: "Python", level: 80 },
+    { name: "PostgreSQL", level: 87 },
+    { name: "MongoDB", level: 82 },
+    // Frontend Skills
+    { name: "JavaScript", level: 92 },
+    { name: "TypeScript", level: 88 },
+    { name: "React", level: 85 },
+    { name: "Next.js", level: 80 },
+    { name: "Tailwind CSS", level: 85 },
+    { name: "Redux", level: 78 },
+    // DevOps & Tools
+    { name: "Docker", level: 82 },
+    { name: "Kubernetes", level: 75 },
+    { name: "Jenkins", level: 70 },
+    { name: "Ollama", level: 72 },
+    { name: "Linux", level: 85 },
+    { name: "Networking", level: 78 }
   ],
   experiences: [
     {
@@ -123,11 +132,11 @@ const initialState: PortfolioState = {
     }
   ],
   contact: {
-    email: "your.email@example.com",
-    phone: "+1 (555) 123-4567",
-    location: "Your City, Country",
+    email: "raygaming20@gmail.com",
+    phone: "+381692573160",
+    location: "Belgrade, Serbia",
     social: {
-      github: "https://github.com/yourusername",
+      github: "https://github.com/samodjolo",
       linkedin: "https://linkedin.com/in/yourusername",
       twitter: "https://twitter.com/yourusername"
     }

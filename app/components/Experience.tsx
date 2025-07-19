@@ -63,45 +63,105 @@ export default function Experience() {
             <h3 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
               Education
             </h3>
-            <div className={`p-6 rounded-xl shadow-lg ${
-              darkMode ? 'bg-gray-800' : 'bg-gray-50'
-            }`}>
-              <div className="text-center">
-                <h4 className="text-xl font-bold text-blue-600 mb-2">
-                  Bachelor's Degree in Computer Science
-                </h4>
-                <p className="text-lg font-semibold mb-2">University Name</p>
-                <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                  2015 - 2019 | GPA: 3.8/4.0
-                </p>
+            
+            <div className="space-y-6">
+              {/* Current University */}
+              <div className={`p-6 rounded-xl shadow-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-gray-50'
+              } border-2 border-blue-500`}>
+                <div className="text-center">
+                  <span className="inline-flex items-center mb-3 px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm font-medium">
+                    📚 Currently Studying
+                  </span>
+                  <h4 className="text-xl font-bold text-blue-600 mb-2">
+                    Bachelor's Degree in Computer Science
+                  </h4>
+                  <p className="text-lg font-semibold mb-2">Singidunum University, Belgrade</p>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    2020 - 2025 (Expected)
+                  </p>
+                </div>
+              </div>
+
+              {/* High School */}
+              <div className={`p-6 rounded-xl shadow-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-gray-50'
+              }`}>
+                <div className="text-center">
+                  <span className="inline-flex items-center mb-3 px-3 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-sm font-medium">
+                    ✓ Completed
+                  </span>
+                  <h4 className="text-xl font-bold text-green-600 mb-2">
+                    High School Diploma
+                  </h4>
+                  <p className="text-lg font-semibold mb-2">ETS Rade Končar, Belgrade</p>
+                  <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    2016 - 2020
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Certifications */}
+          {/* Certifications & Language Skills */}
           <div className="mt-16">
-            <h3 className="text-2xl font-bold text-center mb-8">Certifications</h3>
+            <h3 className="text-2xl font-bold text-center mb-8">Certifications & Language Skills</h3>
             <div className="grid md:grid-cols-2 gap-6">
-              {[
-                'AWS Certified Developer',
-                'Java Spring Professional',
-                'React Advanced Certification',
-                'TypeScript Expert'
-              ].map((cert, index) => (
-                <div
-                  key={index}
-                  className={`p-4 rounded-lg border-2 border-dashed transition-colors ${
-                    darkMode 
-                      ? 'border-gray-600 hover:border-blue-500' 
-                      : 'border-gray-300 hover:border-blue-500'
-                  }`}
-                >
-                  <div className="text-center">
-                    <div className="text-2xl mb-2">🏆</div>
-                    <p className="font-medium">{cert}</p>
-                  </div>
+              {/* Current Certification */}
+              <div className={`p-6 rounded-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              } shadow-lg border-2 border-green-500`}>
+                <div className="text-center">
+                  <div className="text-3xl mb-3">🏆</div>
+                  <h4 className="font-bold text-green-600 mb-2">English B2 Certificate</h4>
+                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    Upper-Intermediate Level
+                  </p>
+                  <span className="inline-flex items-center mt-2 px-2 py-1 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-300 rounded-full text-xs font-medium">
+                    ✓ Certified
+                  </span>
                 </div>
-              ))}
+              </div>
+
+              {/* Completed Course */}
+              <div className={`p-6 rounded-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              } shadow-lg border-2 border-blue-500`}>
+                <div className="text-center">
+                  <div className="text-3xl mb-3">🎓</div>
+                  <h4 className="font-bold text-blue-600 mb-2">English C1 Course</h4>
+                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    Advanced Level
+                  </p>
+                  <span className="inline-flex items-center mt-2 px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-xs font-medium">
+                    ✓ Completed
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Future Goals */}
+            <div className="mt-8 text-center">
+              <h4 className="font-semibold mb-4 text-lg">Professional Development Goals</h4>
+              <div className="flex flex-wrap justify-center gap-3">
+                {[
+                  'English C1 Certification',
+                  'AWS Cloud Practitioner',
+                  'Java Spring Professional',
+                  'Advanced Backend Architecture'
+                ].map((goal, index) => (
+                  <span
+                    key={index}
+                    className={`px-4 py-2 rounded-full font-medium transition-all duration-300 ${
+                      darkMode 
+                        ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' 
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    } shadow-sm hover:shadow-md`}
+                  >
+                    🎯 {goal}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

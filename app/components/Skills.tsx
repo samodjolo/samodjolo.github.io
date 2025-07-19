@@ -42,16 +42,16 @@ export default function Skills() {
   };
 
   const skillCategories = {
-    'Frontend': ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS'],
     'Backend': ['Java', 'Spring Boot', 'Node.js', 'Python', 'PostgreSQL', 'MongoDB'],
-    'Tools & Others': ['Redux']
+    'Frontend': ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Redux'],
+    'DevOps & Tools': ['Docker', 'Kubernetes', 'Jenkins', 'Ollama', 'Linux', 'Networking']
   };
 
   return (
     <section id="skills" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
 
@@ -105,8 +105,8 @@ export default function Skills() {
             <h3 className="text-2xl font-bold mb-8">Other Technologies I Work With</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                'Git', 'GitHub', 'VS Code', 'Figma', 'AWS', 'Vercel', 
-                'Firebase', 'Jest', 'Cypress', 'WebPack', 'Vite', 'REST APIs'
+                'Git', 'GitHub', 'VS Code', 'Postman', 'AWS', 'Vercel', 
+                'Firebase', 'Jest', 'WebPack', 'Vite', 'REST APIs', 'Microservices'
               ].map(tech => (
                 <span
                   key={tech}
@@ -131,7 +131,7 @@ export default function Skills() {
               I'm always exploring new technologies and improving my skills
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Three.js', 'React Native', 'Machine Learning', 'Microservices'].map(tech => (
+              {['Go (Golang)', 'Advanced Kubernetes', 'Machine Learning', 'Cloud Architecture'].map(tech => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-full font-medium"

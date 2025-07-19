@@ -38,19 +38,22 @@ export default function PortfolioApp() {
   }, [dispatch]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${
+    <div className={`min-h-screen transition-colors duration-300 relative ${
       darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'
     }`}>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
-      <Footer />
+      {/* Main Content */}
+      <div className="relative z-10">
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
