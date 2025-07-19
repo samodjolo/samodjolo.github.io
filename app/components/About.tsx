@@ -42,7 +42,7 @@ export default function About() {
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Hi, I'm{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
-                  Djolo
+                  Your Name
                 </span>
                 {' '}👋
               </h3>
@@ -145,13 +145,14 @@ export default function About() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-lg font-semibold hover:from-blue-700 hover:to-green-700 transform hover:scale-105 transition-all duration-300"
+                  className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-2xl font-semibold hover:from-blue-700 hover:to-green-700 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95"
                 >
-                  Start a Conversation
+                  <span className="relative z-10">Start a Conversation</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-400 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                 </button>
                 <button 
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className={`px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 ${
+                  className={`group px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95 ${
                     darkMode ? 'hover:bg-blue-600' : ''
                   }`}
                 >

@@ -5,17 +5,17 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Djolo - Full Stack Developer',
+  title: 'Your Name - Full Stack Developer',
   description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies',
   keywords: ['Full Stack Developer', 'React', 'Next.js', 'TypeScript', 'Web Development'],
-  authors: [{ name: 'Djolo' }],
-  creator: 'Djolo',
-  publisher: 'Djolo',
+  authors: [{ name: 'Your Name' }],
+  creator: 'Your Name',
+  publisher: 'Your Name',
   openGraph: {
-    title: 'Djolo - Full Stack Developer',
+    title: 'Your Name - Full Stack Developer',
     description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies',
-    url: 'https://samodjolo.github.io',
-    siteName: "Djolo's Portfolio",
+    url: 'https://yourwebsite.com',
+    siteName: 'Your Portfolio',
     images: [
       {
         url: '/og-image.jpg',
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Djolo - Full Stack Developer',
+    title: 'Your Name - Full Stack Developer',
     description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies',
-    creator: '@samodjolo',
+    creator: '@yourusername',
     images: ['/og-image.jpg'],
   },
 };
