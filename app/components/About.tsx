@@ -136,7 +136,7 @@ export default function About() {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-16 text-center">
+          <div className="mt-16 text-center relative z-10">
             <div className={`p-8 rounded-2xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-xl`}>
               <h3 className="text-2xl font-bold mb-4">Let's Build Something Amazing Together!</h3>
               <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
@@ -145,18 +145,30 @@ export default function About() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
                   onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-2xl font-semibold hover:from-blue-700 hover:to-green-700 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95"
+                  className="relative px-6 py-3 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-2xl font-semibold transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95 overflow-hidden"
+                  style={{ 
+                    pointerEvents: 'auto',
+                    backfaceVisibility: 'hidden',
+                    WebkitBackfaceVisibility: 'hidden',
+                    willChange: 'transform'
+                  }}
                 >
-                  <span className="relative z-10">Start a Conversation</span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-green-400 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                  <span className="relative z-20 block">Start a Conversation</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-green-700 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
                 </button>
                 <button 
                   onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                  className={`group px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95 ${
+                  className={`relative px-6 py-3 border-2 border-blue-600 text-blue-600 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl active:scale-95 ${
                     darkMode ? 'hover:bg-blue-600' : ''
                   }`}
+                  style={{ 
+                    pointerEvents: 'auto',
+                    backfaceVisibility: 'hidden',
+                    WebkitBackfaceVisibility: 'hidden',
+                    willChange: 'transform'
+                  }}
                 >
-                  View My Work
+                  <span className="relative z-20 block">View My Work</span>
                 </button>
               </div>
             </div>
