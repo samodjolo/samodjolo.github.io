@@ -58,6 +58,51 @@ export default function Experience() {
             </div>
           </div>
 
+          {/* Professional Achievements Section */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold text-center mb-8">Professional Achievements</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Teaching Achievement */}
+              <div className={`p-6 rounded-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              } shadow-lg border-2 border-purple-500`}>
+                <div className="text-center">
+                  <div className="text-3xl mb-3">👨‍🏫</div>
+                  <h4 className="font-bold text-purple-600 mb-2">Teaching Excellence</h4>
+                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    Successfully taught 50+ students programming and mathematics
+                  </p>
+                </div>
+              </div>
+
+              {/* Hackathon Achievement */}
+              <div className={`p-6 rounded-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              } shadow-lg border-2 border-orange-500`}>
+                <div className="text-center">
+                  <div className="text-3xl mb-3">🚀</div>
+                  <h4 className="font-bold text-orange-600 mb-2">Hackathon Success</h4>
+                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    Developed complete CMS platform in hackathon environment
+                  </p>
+                </div>
+              </div>
+
+              {/* Industry Experience */}
+              <div className={`p-6 rounded-lg ${
+                darkMode ? 'bg-gray-800' : 'bg-white'
+              } shadow-lg border-2 border-blue-500`}>
+                <div className="text-center">
+                  <div className="text-3xl mb-3">🎮</div>
+                  <h4 className="font-bold text-blue-600 mb-2">iGaming Expertise</h4>
+                  <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                    2+ years experience in regulated gaming industry
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Education Section */}
           <div className="mt-20">
             <h3 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
@@ -146,9 +191,11 @@ export default function Experience() {
               <div className="flex flex-wrap justify-center gap-3">
                 {[
                   'English C1 Certification',
-                  'AWS Cloud Practitioner',
+                  'AWS Solutions Architect',
                   'Java Spring Professional',
-                  'Advanced Backend Architecture'
+                  'Advanced iGaming Platforms',
+                  'Enterprise CMS Development',
+                  'Technical Team Leadership'
                 ].map((goal, index) => (
                   <span
                     key={index}

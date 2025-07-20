@@ -111,24 +111,45 @@ const initialState: PortfolioState = {
   experiences: [
     {
       id: 1,
-      company: "Tech Solutions Inc",
-      position: "Senior Full Stack Developer",
-      duration: "2022 - Present",
-      description: "Lead development of scalable web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented best practices for code quality and performance."
+      company: "Krazy Fish Media",
+      position: "Full Stack Developer",
+      duration: "2025 - Present",
+      description: "Developing comprehensive web solutions using modern technology stack. Building scalable applications with React, Next.js, and Java Spring Boot. Collaborating with cross-functional teams to deliver high-quality digital products and implementing best practices for performance optimization."
     },
     {
       id: 2,
-      company: "Digital Innovation Lab",
-      position: "Frontend Developer",
-      duration: "2020 - 2022",
-      description: "Developed responsive web applications and improved user experience for various client projects. Collaborated with designers and backend developers to deliver high-quality solutions."
+      company: "Relof3 Project (Hackathon)",
+      position: "Full Stack Developer",
+      duration: "2025",
+      description: "Participated in an intensive hackathon project to develop a fully customizable CMS platform. Implemented dynamic content management features, user-friendly admin interfaces, and flexible templating systems. Collaborated with a team of developers to deliver a complete solution within tight deadlines."
     },
     {
       id: 3,
-      company: "StartupXYZ",
-      position: "Junior Developer",
-      duration: "2019 - 2020",
-      description: "Built features for a growing SaaS platform, participated in agile development processes, and gained experience with modern web technologies."
+      company: "NCR Corporation",
+      position: "Service Desk Specialist - SBONet Platform",
+      duration: "2024 - Present",
+      description: "Providing technical support and maintenance for SBONet, a comprehensive web-based inventory management platform. Troubleshooting complex system issues, managing user accounts, and ensuring optimal platform performance. Collaborating with development teams to identify and resolve technical challenges."
+    },
+    {
+      id: 4,
+      company: "Gamtix (Online iGaming Startup)",
+      position: "Full Stack Developer",
+      duration: "2022 - 2024",
+      description: "Developed and maintained online gaming platform applications for the iGaming industry. Built robust backend services with TypeScript and Node.js, created responsive frontend interfaces with React and TypeScript. Implemented secure payment processing, real-time gaming features, user authentication systems, and compliance frameworks for regulatory requirements in the online gambling sector."
+    },
+    {
+      id: 5,
+      company: "SIT Programming School",
+      position: "Programming & Mathematics Instructor",
+      duration: "2022 - 2023",
+      description: "Taught programming fundamentals, advanced Java concepts, and mathematical foundations for computer science. Designed curriculum for web development courses, mentored students in practical projects, and helped bridge the gap between theoretical knowledge and real-world application."
+    },
+    {
+      id: 6,
+      company: "Freelance",
+      position: "Independent Full Stack Developer",
+      duration: "2019 - Present",
+      description: "Providing custom web development solutions for various clients across different industries. Specializing in e-commerce platforms, business management systems, and API integrations. Managing complete project lifecycle from requirements gathering to deployment and maintenance."
     }
   ],
   contact: {

@@ -8,10 +8,17 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
+  const [mounted, setMounted] = useState(false);
 
   const roles = ['Backend Developer', 'Full Stack Developer', 'Java Specialist', 'Problem Solver'];
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
+
     const handleTyping = () => {
       const current = loopNum % roles.length;
       const fullText = roles[current];
@@ -33,7 +40,32 @@ export default function Hero() {
 
     const timer = setTimeout(handleTyping, typingSpeed);
     return () => clearTimeout(timer);
-  }, [text, isDeleting, loopNum, typingSpeed, roles]);
+  }, [text, isDeleting, loopNum, typingSpeed, roles, mounted]);
+
+  if (!mounted) {
+    return (
+      <section id="hero" className="min-h-screen pt-25 flex items-center justify-center relative overflow-hidden">
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className={`text-lg md:text-xl mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              👋 Hello, I'm
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+              Djolo
+            </h1>
+            <div className="text-2xl md:text-3xl mb-8 h-16 flex items-center justify-center">
+              <span className={`${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                I'm a{' '}
+                <span className="text-blue-600 font-semibold">
+                  Backend Developer
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="hero" className="min-h-screen pt-25 flex items-center justify-center relative overflow-hidden">
@@ -164,7 +196,7 @@ export default function Hero() {
         </div>
 
         {/* Floating particles - more visible */}
-        {[...Array(20)].map((_, i) => (
+        {mounted && [...Array(20)].map((_, i) => (
           <div
             key={`particle-${i}`}
             className={`absolute w-2 h-2 rounded-full opacity-50 ${
