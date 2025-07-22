@@ -88,11 +88,11 @@ const initialState: PortfolioState = {
   ],
   skills: [
     // Backend Skills
-    { name: "Java", level: 90 },
-    { name: "Spring Boot", level: 88 },
+    { name: "Java", level: 65 },
+    { name: "Spring Boot", level: 50 },
     { name: "Node.js", level: 85 },
     { name: "Python", level: 80 },
-    { name: "PostgreSQL", level: 87 },
+    { name: "PostgreSQL", level: 60 },
     { name: "MongoDB", level: 82 },
     // Frontend Skills
     { name: "JavaScript", level: 92 },
@@ -103,8 +103,8 @@ const initialState: PortfolioState = {
     { name: "Redux", level: 78 },
     // DevOps & Tools
     { name: "Docker", level: 82 },
-    { name: "Kubernetes", level: 75 },
-    { name: "Jenkins", level: 70 },
+    { name: "Kubernetes", level: 55 },
+    { name: "Jenkins", level: 45 },
     { name: "Ollama", level: 72 },
     { name: "Linux", level: 85 },
     { name: "Networking", level: 78 }
