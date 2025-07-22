@@ -81,31 +81,6 @@ Thank you!`;
           with separate frontend and backend repositories, plus other projects demonstrating my development skills.
         </p>
 
-        {/* Enhanced Filter Buttons */}
-        <div className="flex justify-center mb-12">
-          <div className={`flex space-x-2 p-2 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-gray-100'} shadow-lg`}>
-            {([
-              { key: 'all', label: 'All Projects', icon: '🔍' },
-              { key: 'github', label: 'GitHub Repos', icon: '📂' },
-              { key: 'featured', label: 'Featured', icon: '⭐' }
-            ] as const).map(filterType => (
-              <button
-                key={filterType.key}
-                onClick={() => setFilter(filterType.key)}
-                className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                  filter === filterType.key
-                    ? 'bg-gradient-to-r from-blue-600 to-green-600 text-white shadow-lg transform scale-105'
-                    : darkMode 
-                      ? 'text-gray-300 hover:text-white hover:bg-gray-700'
-                      : 'text-gray-600 hover:text-gray-900 hover:bg-gray-200'
-                }`}
-              >
-                <span>{filterType.icon}</span>
-                <span>{filterType.label}</span>
-              </button>
-            ))}
-          </div>
-        </div>
 
         {/* GitHub Stats Banner */}
         <div className={`mb-12 p-6 rounded-xl ${
