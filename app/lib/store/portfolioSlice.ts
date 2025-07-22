@@ -48,9 +48,9 @@ const initialState: PortfolioState = {
     {
       id: 1,
       title: "CMS Codilio Backend",
-      description: "A comprehensive Content Management System backend built with modern TypeScript architecture. Features robust API endpoints, user authentication, content management capabilities, real-time socket communication, automated cron jobs, and scalable MySQL database design for handling dynamic web content.",
+      description: "A comprehensive Content Management System backend built with modern TypeScript and NestJS architecture. Features robust API endpoints, user authentication, content management capabilities, real-time socket communication, automated cron jobs, and scalable MySQL database design for handling dynamic web content.",
       image: "/api/placeholder/400/300",
-      tech: ["TypeScript", "Node.js", "Express", "MySQL", "Socket.io", "Cron Jobs", "REST API", "JWT"],
+      tech: ["TypeScript", "NestJS", "MySQL", "Socket.io", "Cron Jobs", "REST API", "JWT"],
       github: "https://github.com/samodjolo/cms-codilio-backend",
       demo: "Request Demo",
       featured: true

@@ -44,7 +44,7 @@ Thank you!`;
       'MySQL': 'bg-blue-800',
       'Docker': 'bg-blue-600',
       'REST API Integration': 'bg-indigo-600',
-      'Express': 'bg-gray-600',
+      'NestJS': 'bg-red-600',
       'JWT': 'bg-indigo-500',
       'Redux': 'bg-purple-600',
       'Tailwind CSS': 'bg-teal-500',
