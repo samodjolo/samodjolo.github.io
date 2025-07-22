@@ -103,10 +103,9 @@ const initialState: PortfolioState = {
     { name: "Redux", level: 60 },
     // DevOps & Tools
     { name: "Docker", level: 82 },
-    { name: "Kubernetes", level: 55 },
     { name: "Jenkins", level: 45 },
     { name: "Ollama", level: 72 },
-    { name: "Linux", level: 85 },
+    { name: "Linux", level: 70 },
     { name: "Networking", level: 78 }
   ],
   experiences: [

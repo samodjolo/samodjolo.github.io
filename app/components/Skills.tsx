@@ -44,7 +44,7 @@ export default function Skills() {
   const skillCategories = {
     'Backend': ['Java', 'Spring Boot', 'Node.js', 'Python', 'PostgreSQL', 'MongoDB'],
     'Frontend': ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Redux'],
-    'DevOps & Tools': ['Docker', 'Kubernetes', 'Jenkins', 'Ollama', 'Linux', 'Networking']
+    'DevOps & Tools': ['Docker', 'Jenkins', 'Ollama', 'Linux', 'Networking']
   };
 
   return (
@@ -131,7 +131,7 @@ export default function Skills() {
               I'm always exploring new technologies and improving my skills
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Go (Golang)', 'Advanced Kubernetes', 'Machine Learning', 'Cloud Architecture'].map(tech => (
+              {['Go (Golang)', 'Kubernetes', 'Machine Learning', 'Cloud Architecture'].map(tech => (
                 <span
                   key={tech}
                   className="px-4 py-2 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-full font-medium"
