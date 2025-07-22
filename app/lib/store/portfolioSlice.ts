@@ -60,7 +60,7 @@ const initialState: PortfolioState = {
       title: "Book Store - Angular Frontend",
       description: "Angular frontend application for a comprehensive book store system. Features book browsing, search functionality, user authentication, shopping cart, and order management. Built with modern Angular architecture and connects seamlessly to the backend API.",
       image: "/api/placeholder/400/300",
-      tech: ["Angular", "TypeScript", "Angular Material", "RxJS", "SCSS", "REST API Integration"],
+      tech: ["Angular", "TypeScript", "Angular Material", "RxJS", "REST API Integration"],
       github: "https://github.com/samodjolo/angular-frontend",
       demo: "Request Demo",
       featured: true
