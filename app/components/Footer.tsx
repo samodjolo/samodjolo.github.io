@@ -123,7 +123,7 @@ export default function Footer() {
                       } focus:outline-none focus:ring-2 focus:ring-blue-500/20`}
                     />
                     <button className="px-4 py-2 bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-lg text-sm font-medium hover:from-blue-700 hover:to-green-700 transition-colors">
-                      Subscribe
+                      Coming Soon
                     </button>
                   </div>
                 </div>
