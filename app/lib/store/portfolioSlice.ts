@@ -44,6 +44,7 @@ interface PortfolioState {
 
 const initialState: PortfolioState = {
   projects: [
+    // Your actual GitHub repositories
     {
       id: 1,
       title: "CMS Codilio Backend",

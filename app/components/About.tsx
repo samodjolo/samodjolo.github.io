@@ -50,24 +50,24 @@ export default function About() {
               <p className={`text-lg leading-relaxed ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                With over 4 years of experience in software development, I specialize in backend 
-                development and creating robust, scalable server-side applications. My expertise 
-                lies in Java Spring Boot, Node.js, and database design with PostgreSQL and MongoDB.
+                I'm a backend developer with over 4 years of hands-on experience building server-side applications. 
+                My main focus is Node.js development using Express and NestJS frameworks, paired with MySQL databases 
+                to create reliable and scalable systems.
               </p>
 
               <p className={`text-lg leading-relaxed ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                I'm passionate about building efficient APIs, microservices architectures, and 
-                ensuring optimal performance and security. While I'm backend-focused, I also 
-                enjoy working with modern frontend technologies to deliver complete solutions.
+                I love working on complex backend challenges - from designing clean APIs to implementing real-time 
+                features with Socket.io. While backend development is where I shine, I also enjoy building complete 
+                solutions by working with frontend technologies when needed.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className={`p-4 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg hover:shadow-xl transition-shadow`}>
                   <h4 className="font-semibold text-blue-600 mb-2">Backend (Primary)</h4>
                   <p className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                    Java Spring Boot, Node.js, PostgreSQL, MongoDB
+                    Node.js, Express, NestJS, MySQL
                   </p>
                 </div>
                 <div className={`p-4 rounded-xl ${darkMode ? 'bg-gray-700' : 'bg-white'} shadow-lg hover:shadow-xl transition-shadow`}>
@@ -79,7 +79,7 @@ export default function About() {
               </div>
 
               <div className="flex flex-wrap gap-2 mt-6">
-                {['Java Spring', 'Node.js', 'PostgreSQL', 'MongoDB', 'REST APIs', 'Microservices'].map(tech => (
+                {['Node.js', 'Express', 'NestJS', 'MySQL', 'Socket.io', 'REST APIs'].map(tech => (
                   <span
                     key={tech}
                     className={`px-3 py-1 rounded-full text-sm font-medium ${

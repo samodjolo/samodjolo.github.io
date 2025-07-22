@@ -10,7 +10,7 @@ export default function Hero() {
   const [typingSpeed, setTypingSpeed] = useState(150);
   const [mounted, setMounted] = useState(false);
 
-  const roles = ['Backend Developer', 'Full Stack Developer', 'Java Specialist', 'Problem Solver'];
+  const roles = ['Backend Developer', 'Node.js Specialist', 'Express Developer', 'Full Stack Developer'];
 
   useEffect(() => {
     setMounted(true);
@@ -265,7 +265,7 @@ export default function Hero() {
           <p className={`text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed ${
             darkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
-            Passionate backend developer specializing in Java Spring Boot and modern web technologies.
+            Backend developer specializing in Node.js, Express, and NestJS with MySQL. 
             Building scalable, efficient solutions that solve real-world problems.
           </p>
 
