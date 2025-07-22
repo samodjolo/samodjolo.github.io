@@ -46,42 +46,42 @@ const initialState: PortfolioState = {
   projects: [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Spring Boot, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
+      title: "CMS Codilio Backend",
+      description: "A comprehensive Content Management System backend built with modern TypeScript architecture. Features robust API endpoints, user authentication, content management capabilities, real-time socket communication, automated cron jobs, and scalable MySQL database design for handling dynamic web content.",
       image: "/api/placeholder/400/300",
-      tech: ["React", "Java Spring", "MongoDB", "Spring Boot", "Stripe"],
-      github: "https://github.com/yourusername/ecommerce",
+      tech: ["TypeScript", "Node.js", "Express", "MySQL", "Socket.io", "Cron Jobs", "REST API", "JWT"],
+      github: "https://github.com/samodjolo/cms-codilio-backend",
       demo: "Request Demo",
       featured: true
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "Book Store - Angular Frontend",
+      description: "Angular frontend application for a comprehensive book store system. Features book browsing, search functionality, user authentication, shopping cart, and order management. Built with modern Angular architecture and connects seamlessly to the backend API.",
       image: "/api/placeholder/400/300",
-      tech: ["Next.js", "TypeScript", "Java Spring", "PostgreSQL", "Tailwind"],
-      github: "https://github.com/yourusername/taskapp",
+      tech: ["Angular", "TypeScript", "Angular Material", "RxJS", "SCSS", "REST API Integration"],
+      github: "https://github.com/samodjolo/angular-frontend",
       demo: "Request Demo",
       featured: true
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "Beautiful weather dashboard with location-based forecasts, interactive maps, and detailed weather analytics.",
+      title: "Book Store - Backend API",
+      description: "A comprehensive book store backend system developed as a final examination project. Features complete CRUD operations for books, user management, authentication, order processing, and inventory management. Built with TypeScript and MySQL for robust data storage.",
       image: "/api/placeholder/400/300",
-      tech: ["React", "TypeScript", "OpenWeather API", "Chart.js"],
-      github: "https://github.com/yourusername/weather",
+      tech: ["TypeScript", "Node.js", "Express", "MySQL", "Authentication", "REST API"],
+      github: "https://github.com/samodjolo/backend-ispit-final",
       demo: "Request Demo",
-      featured: false
+      featured: true
     },
     {
       id: 4,
-      title: "AI Chat Application",
-      description: "Modern chat application with AI integration, real-time messaging, and smart conversation features.",
+      title: "Personal Portfolio Website",
+      description: "My personal portfolio website built with modern web technologies. Features responsive design, dark/light theme switching, smooth animations, and showcases my projects and skills with clean, professional presentation.",
       image: "/api/placeholder/400/300",
-      tech: ["Next.js", "OpenAI API", "WebSockets", "Redis"],
-      github: "https://github.com/yourusername/ai-chat",
-      demo: "Request Demo",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Redux", "Responsive Design"],
+      github: "https://github.com/samodjolo/samodjolo.github.io",
+      demo: "https://samodjolo.github.io",
       featured: true
     }
   ],
