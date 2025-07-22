@@ -97,10 +97,10 @@ const initialState: PortfolioState = {
     // Frontend Skills
     { name: "JavaScript", level: 92 },
     { name: "TypeScript", level: 88 },
-    { name: "React", level: 85 },
-    { name: "Next.js", level: 80 },
-    { name: "Tailwind CSS", level: 85 },
-    { name: "Redux", level: 78 },
+    { name: "React", level: 60 },
+    { name: "Next.js", level: 50 },
+    { name: "Tailwind CSS", level: 60 },
+    { name: "Redux", level: 60 },
     // DevOps & Tools
     { name: "Docker", level: 82 },
     { name: "Kubernetes", level: 55 },
